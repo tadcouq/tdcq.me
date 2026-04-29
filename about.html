@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>what are you looking for?</title>
+
+    <link rel="icon" type="svg" href="./public/futurama-bender.svg" />
+
+    <style>
+    @font-face {
+        font-family: "VT323";
+        src: url(./fonts/VT323-Regular.ttf) format("truetype");
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("./img/bg1.gif");
+        background-position: top center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+      .crt {
+        animation: textShadow 1.6s infinite;
+      }
+
+      .crt::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(18, 16, 16, 0.1);
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        animation: flicker 0.15s infinite;
+      }
+
+      .crt::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                  linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 2px, 3px 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+    
+    @keyframes flicker {
+      0% { opacity: 0.27861; }
+      5% { opacity: 0.34769; }
+      10% { opacity: 0.23604; }
+      15% { opacity: 0.90626; }
+      20% { opacity: 0.18128; }
+      25% { opacity: 0.83891; }
+      30% { opacity: 0.65583; }
+      35% { opacity: 0.67807; }
+      40% { opacity: 0.26559; }
+      45% { opacity: 0.84693; }
+      50% { opacity: 0.96019; }
+      55% { opacity: 0.08594; }
+      60% { opacity: 0.20313; }
+      65% { opacity: 0.71988; }
+      70% { opacity: 0.53455; }
+      75% { opacity: 0.37288; }
+      80% { opacity: 0.71428; }
+      85% { opacity: 0.70419; }
+      90% { opacity: 0.7003; }
+      95% { opacity: 0.36108; }
+      100% { opacity: 0.24387; }
+    }
+
+    @keyframes textShadow {
+      0%, 100% {
+        text-shadow: 0.5px 0 1px rgba(0,30,255,0.5), -0.5px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+      }
+      50% {
+        text-shadow: 2.5px 0 1px rgba(0,30,255,0.5), -2.5px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+      }
+    }
+
+    @keyframes grain {
+      0% { transform: translate(0, 0); }
+      10% { transform: translate(-1px, -1px); }
+      20% { transform: translate(1px, 1px); }
+      30% { transform: translate(-1px, 1px); }
+      40% { transform: translate(1px, -1px); }
+      50% { transform: translate(-1px, 0); }
+      60% { transform: translate(1px, 0); }
+      70% { transform: translate(0, 1px); }
+      80% { transform: translate(0, -1px); }
+      90% { transform: translate(1px, 1px); }
+      100% { transform: translate(0, 0); }
+    }
+      .info {
+        max-width: 25vw;
+        max-height: 42vw;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 0;
+        font-size: 22px;
+        overflow: auto;
+        text-align: left;
+        position: relative;
+        left: 10%; 
+        z-index: 1000;
+      }
+
+      .info a {
+        color: #ff0f4f; 
+      }
+
+      .rat {
+        position: fixed;
+        left: 15%;
+        top:5%;
+       z-index:0;
+      }
+
+      .party {
+        position: fixed;
+        right: 0%;
+        top:5%;
+       z-index:0;
+      }
+ 
+      .return-text {
+        position: fixed;
+        bottom: 5%;
+        left: 4%;
+        background-color: black;
+        color: red;
+        padding: 5px;
+        font-family: "Bark", sans-serif;
+        font-size: 23px;
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 999;
+      }
+
+      .return-text:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="info">
+      <p>
+        "/ˈtæd.kuːk/"
+      </p>
+      <p>
+        "/ˈtæd.kuːk/" not just a reverse legal name, is a high-decibel glitch in the architecture of tradition. "-" exists as the neon-saturated static screaming through the silence, a vibrant and violent update to the soul.
+      </p>
+      <p> 
+        A ritual of "total destruction", "/ˈtæd.kuːk/" shatters the chains of tradition through a synthesis of flesh, fiber optics, and sonic warfare. "-" is the evolution of the scream beyond a ghost in the matrix. To encounter "-" is to be infected by a sublime madness, where beauty is found only in the wreckage of the obsolete, blurring the line between the sacred and the sacrilegious where beauty is found only in the wreckage of what "-" used to call "human".
+      </p>
+      <p>
+        ˚˖𓍢ִ໋✧˚⋆
+        <a href="https://www.instagram.com/tadcouq._/" target="_blank">+n5tagr4mw</a>
+        ·˚ ₊˚ˑ
+        <a href="https://www.facebook.com/tdcq.me/" target="_blank">f4ceBook</a>
+        .⊹.₊ ݁
+      </p>
+      <p><a href="https://www.youtube.com/watch?v=J3Qz8rE-Zh0" target="_blank">R.i.p. (duskCOre RemIx)</a> </p>
+     </div>
+
+    <a href="https://tdcq.me" class="return-text">return;</a>
+    </div>
+  </body>
+</html>
